@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    color: #FF7400;
+}
+
+body {
+    background: white;
+}
+
+.header {
+    height: 100vh;
+    background: url('images/header-background.png') no-repeat;
+    color: white;
+}
+
+.header-container{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-top: 54px;
+    padding-inline: 150px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+} 
+
+.header-menu-list{
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+
+.header-menu-item {
+    font-size: 14px;
+}
+
+.header-menu-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+}
+
+.header-menu-cart {
+    border-right: 1px solid white;
+    padding-right: 30px;
+    height: 70px;
+    position: relative;
+}
+
+.header-menu-cart-image {
+    position: absolute;
+    top: 27px;
+}
+
+.header-menu-tel-and-description {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.header-menu-tel {
+    text-decoration: underline;
+}
+
+.header-button {
+    background: #FF7400;
+    color: #fff;
+    padding: 14px 19px;
+    position: relative;
+    transition-duration: 0.4s;
+}
+
+.header-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.header-button:hover {
+    color: #FF7400;
+}
+
+.header-button::after {
+    content: '';
+    background: white;
+    height: 100%;
+    width: 1%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    transition-duration: 0.4s;
+}
+
+.header-button:hover::after{
+    width: 100%;
+}
+
+.header-menu-item-last {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.header-button-burger {
+    background: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+
+.header-title {
+    margin-top: 200px;
+    margin-left: 182px;
+    position: relative;
+}
+
+.header-subtitle {
+    position: absolute;
+    left: 0;
+    text-align: center;
+}
+
+.header-subtitle h3 {
+    color: #D67E35;
+    font-size: 50px;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+}
+
+.header-subtitle p {
+    font-size: 80px;
+    color: #D67E35;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+}
+
+.header-subtitle h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #D67E35;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.header-subtitle h2::before {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+}
+
+.header-subtitle h2::after {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: 330px;
+}
+
+.header-title-button {
+    background: #FF7400;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 14px 28px;
+    font-family: "Open Sas", sans-serif;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.header-title-button:hover {
+    background: #9e4903;
+    color: white;
+}
+
+
+
+.cards {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    margin-top: -80px;
+}
+
+.main-cards-list {
+    display: flex;
+    column-gap: 31px;
+    justify-content: center;
+}
+
+.main-cards-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    align-items: center;
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.main-cards-title {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.main-cards-title span {
+    color: #BC9060;
+}
+
+.main-cards-description {
+    font-size: 26px;
+    color: #656363;
+}
+
+
+
+.history {
+    display: flex;
+    margin-top: 150px;
+}
+
+.history-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+.history-info-title {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: clamp(27px, 3.75vw, 54px);
+    margin-bottom: 21px;
+}
+
+.history-info-title span {
+    color: #BC9060;
+}
+
+.history-info-description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #656363;
+    width: 444px;
+}
+
+.history-info-counter {
+    margin-top: 40px;
+}
+
+.history-info-counter-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.history-info-counter-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.history-info-counter-item span {
+    color: #BC9060;
+    font-size: clamp(32px, 2.77vw, 40px);
+}
+
+.history-images {
+    flex: 1;
+    position: relative;
+}
+
+.history-images-1 {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 40px;
+}
+
+.history-images-2 {
+    position: absolute;
+    z-index: -1;
+    top: -37px;
+    left: 178px;
+    box-shadow: 60px 35px 5px #FFE8D0;
+}
+
+.history-images-3 {
+    position: absolute;
+    z-index: 0;
+    top: 160px;
+    left: 282px;
+}
+
+
+.discount {
+    color: white;
+    margin-top: 200px;
+    background: url('images/discount-bg.png');
+    display: flex;
+    align-items: center;
+    height: 360px;
+    padding: 0px 165px 0px 165px;
+}
+
+.discount-info {
+    flex: 1;
+}
+
+.discount-info h2 {
+    color: #D67E34;
+    font-size: clamp(25px, 3.61vw, 52px);
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.discount-info p {
+    color: white;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+.discount-button a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #FF7400;
+    padding: 14px 19px;
+    transition-duration: 0.3s;
+}
+
+.discount-button a:hover {
+    background: #9e4903;
+    color: white;
+}
+
+
+.menu {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title {
+    font-size: clamp(27px, 3.7vw, 54px);
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.menu-title span {
+    color: #D67E34;
+}
+
+.menu-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.menu-image-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.menu-image-item {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.menu-image-item p {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+
+.types-of-burgers {
+    background: url('images/types-of-burgers/types-of-burgers-bg.png') no-repeat;
+    padding: 100px 164px 266px 164px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types-of-burgers-title {
+    font-size: 54px;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 140px;
+}
+
+.types-of-burgers-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.types-of-burgers-item{
+    background: white;
+    border-radius: 5px;
+    padding: 80px 60px 40px 60px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.types-of-burgers-item-title {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 22px;
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.types-of-burgers-item-description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 25px;
+    max-width: 200px;
+}
+
+.types-of-burgers-item-button {
+    color: white;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    background: #FF7400;
+    padding: 14px 68px;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+}
+
+.types-of-burgers-item-button:hover {
+    background: #9e4903;
+    color: white; 
+}
+
+.types-of-burgers-item-first {
+    position: relative;
+}
+
+.types-of-burgers-item-first::before {
+    content: "Recommended";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    background: #D67E34;
+    padding: 9px 12px;
+    border-radius: 7px 0px 7px 0px;
+}
+
+.types-of-burgers-item-title::after {
+    content: "420 ₽";
+    background: #D67E34;
+    padding: 30px 25px;
+    border: 8px white solid;
+    border-radius: 50%;
+    position: absolute;
+    top: -120px;
+    right: -8px;
+    font-family: "Cookie", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 105px 15px 140px 15px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.comment-description {
+    font-style: italic;
+    max-width: 920px;
+    margin-bottom: 20px;
+}
+
+.comment-who {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.comment-name {
+    font-weight: 400;
+}
+
+
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dishes-title {
+    font-size: clamp(27px, 3.7vw, 54px);
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.dishes-title span {
+    color: #D67E34;
+}
+
+.dishes-photos-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.dishes-photos-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.dishes-photos-dishes {
+    display: flex;
+    column-gap: 30px;
+}
+
+.dishes-photos-item-last {
+    flex-direction: column-reverse;
+}
+
+.dishes-photos-item-glasses,
+.dishes-photos-dishes-coffee,
+.dishes-photos-dishes-borsch {
+    border-radius: 7px;
+}
+
+
+.our-chefs {
+    padding: 100px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-chefs-title {
+    font-size: clamp(30px, 3.7vw, 54px);
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+.our-chefs-title span {
+    color: #D67E34;
+}
+
+.our-chefs-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+
+@media (max-width: 1170px) {
+    .header-menu,
+    .header-button {
+        display: none;
+    }
+
+    .header-button-burger {
+        display: block;
+    }
+
+    .our-chefs-image {
+    width: 285px;
+    height: 360px;
+    } 
+
+    .our-chefs-title {
+    margin-bottom: 70px;
+    }
+
+    .our-chefs-list {
+    column-gap: 20px;
+    }
+}
+
+@media (max-width: 1122px) {
+    .main-cards-list {
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    }
+
+    .history {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 70px;
+    margin-top: 150px;
+    }
+
+    .history-images-1 {
+    top: 8px;
+    left: -246px;
+    }
+
+    .history-images-2 {
+    top: -37px;
+    left: -96px;
+    }
+
+    .history-images-3 {
+    top: 160px;
+    left: 7px;
+    }
+
+    .discount {
+    margin-top: 500px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 55px;
+    height: auto;
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+    }
+
+    .discount-info h2 {
+    font-size: clamp(25px, 3.60vw, 52px);
+    margin-bottom: 17px;
+    text-align: center;
+    }
+
+    .discount-info p {
+    font-size: 18px;
+    }
+
+    .menu {
+    margin-top: 90px;
+    }
+
+    .menu-title {
+    margin-bottom: 80px;
+    }
+
+    .menu-images {
+    column-gap: 20px;
+    }
+
+    .menu-image-list {
+
+    row-gap: 30px;
+    }
+
+    .menu-image-item {
+    column-gap: 10px;
+    }
+
+    .menu-image-item p {
+    font-size: 20px;
+    }
+
+    .menu-image-pizza img {
+    width: 320px;
+    height: 475px;
+    }
+
+    .menu-image-item img {
+    width: 130px;
+    height: 115px;
+    }
+
+    .types-of-burgers {
+    padding: 60px 15px 100px 15px;
+    margin-top: 100px;
+    }
+
+    .types-of-burgers-title {
+    margin-bottom: 80px;
+    }
+
+    .types-of-burgers-item-disappear {
+    display: none;
+    }
+
+    .dishes-photos-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 30px;
+    }
+
+    .dishes-title {
+    margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-container{  
+    padding-top: 30px;
+    padding-inline: 70px;
+    } 
+
+    .header-title {
+    margin-top: 100px;
+    margin-left: 0px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .header-subtitle {
+    position: static;
+    }
+
+    .header-subtitle h3 {
+    color: #D67E35;
+    font-size: 40px;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    }
+
+    .header-subtitle p {
+    font-size: 60px;
+    color: #D67E35;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    }
+
+    .header-subtitle h2 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #D67E35;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    }
+
+    .header-subtitle h2::before {
+    content: "";
+    height: 2px;
+    width: 40px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: 55px;
+    }
+
+    .header-subtitle h2::after {
+    content: "";
+    height: 2px;
+    width: 40px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: 265px;
+    }
+
+    .cards {
+    margin-top: -350px;
+    }
+}
+
+@media (max-width: 910px) {
+    .our-chefs-title {
+    margin-bottom: 50px;
+    }
+
+    .our-chefs-list {
+    column-gap: 0px;
+    flex-direction: column;
+    row-gap: 20px;
+    }
+}
+
+@media (max-width: 810px) {
+    .header-title {
+    margin-top: 50px;
+    }
+
+    .cards {
+    margin-top: -400px;
+    }
+
+    .comment {
+    padding: 80px 15px 100px 15px;
+    }
+
+    .dishes-photos-list {
+    column-gap: 0px;
+    row-gap: 20px;
+    }
+
+    .dishes-title {
+    margin-bottom: 40px;
+    }
+
+    .dishes-photos-list {
+    row-gap: 20px;
+    }
+
+    .dishes-photos-item-glasses {
+    width: 290px;
+    height: 200px;
+    }
+
+    .dishes-photos-dishes-coffee {
+    width: 290px;
+    height: 300px;
+    }
+
+    .dishes-photos-dishes-borsch {
+    width: 290px;
+    height: 315px;
+    }
+
+    .dishes-photos-dishes {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .menu {
+    margin-top: 60px;
+    }
+
+    .menu-title {
+    margin-bottom: 50px;
+    }
+
+    .menu-images {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 50px;
+    }
+
+    .menu-image-list {
+    row-gap: 50px;
+    }
+
+    .menu-image-item {
+    column-gap: 8px;
+    }
+
+    .menu-image-item p {
+    font-size: 20px;
+    max-width: 165px;
+    text-align: center;
+    }
+
+    .menu-image-item p span {
+    display: none;
+    }
+
+    .menu-image-pizza img {
+    width: 300px;
+    height: 400px;
+    }
+
+    .menu-image-item img {
+    width: 120px;
+    height: 105px;
+    }
+}
+
+@media (max-width: 540px) {
+    .history-info-title {
+    margin-bottom: 13px;
+    }
+
+    .history-info-description {
+    font-size: 14px;
+    width: 300px;
+    }
+
+    .history-info-counter {
+    margin-top: 20px;
+    }
+
+    .history-images-1 {
+    width: 125px;
+    height: 154px;
+    top: -10px;
+    left: -144px;
+    }
+
+    .history-images-2 {
+    width: 137px;
+    height: 220px;
+    top: -37px;
+    left: -64px;
+    box-shadow: 30px 20px 5px #FFE8D0;
+    }
+
+    .history-images-3 {
+    width: 137px;
+    height: 154px;
+    top: 65px;
+    left: -10px;
+    }
+
+    .discount {
+    margin-top: 250px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    height: auto;
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+    }
+
+    .discount-info h2 {
+    margin-bottom: 15px;
+    max-width: 300px;
+    }
+
+    .discount-info p {
+    font-size: 15px;
+    }
+
+    .types-of-burgers {
+    padding: 60px 15px 90px 15px;
+    margin-top: 70px;
+    }
+
+    .types-of-burgers-title {
+    margin-bottom: 50px;
+    }
+    
+    .comment {
+    padding: 60px 15px 70px 15px;
+    }
+
+    .dishes-title {
+    margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-container{  
+    padding-top: 20px;
+    padding-inline: 30px;
+    }  
+
+    .header-subtitle h3 {
+    color: #D67E35;
+    font-size: 30px;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    }
+
+    .header-subtitle p {
+    font-size: 40px;
+    color: #D67E35;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    }
+
+    .header-subtitle h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #D67E35;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    }
+
+    .header-subtitle h2::before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    }
+
+    .header-subtitle h2::after {
+    content: "";
+    height: 2px;
+    width: 30px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50%;
+    left: 203px;
+    }
+
+    .header-title-button {
+    padding: 12px 20px;
+    }
+
+    .cards {
+    margin-top: -460px;
+    }
+
+    .main-cards-list {
+    row-gap: 15px;
+    }
+
+    .main-cards-title {
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 21px;
+    }
+
+    .main-cards-description {
+    font-size: 21px;
+    }
+
+    .our-chefs-title {
+    margin-bottom: 30px;
+    }
+
+    .our-chefs-list {
+    row-gap: 15px;
+    }
+}
